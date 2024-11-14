@@ -1,0 +1,11 @@
+services:
+  test:
+    build:
+      context: ./
+      args:
+        GID: ${GROUP_ID}
+        UID: ${USER_ID}
+#    volumes:
+#      - type: bind
+#        source: /home/jenkins/workspace/auto-test/target/allure-results
+#        target: /apps/automation-test/target/allure-results
